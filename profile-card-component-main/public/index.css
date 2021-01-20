@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+
+.attribution {
+  z-index: 5;
+  position: absolute;
+  font-size: 1rem;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  margin-left: 40vw;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  overflow-y: hidden;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  font-family: "Kumbh Sans", sans-serif;
+  max-height: 100vh;
+  height: 95vh;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.profileCard {
+  z-index: 2;
+  position: relative;
+  justify-self: center;
+  margin-left: 40vw;
+  align-self: center;
+  height: fit-content;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.profileCard > img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profileCard li {
+  list-style: none;
+}
+
+.profile-pic {
+  z-index: 3;
+  position: absolute;
+  height: 96px;
+  left: 35%;
+  top: calc(10% + 48px);
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+}
+
+.top-bcg-img {
+  z-index: 1;
+  position: absolute;
+  top: -50vh;
+  left: -20vw;
+  pointer-events: none;
+}
+
+.bottom-bcg-img {
+  z-index: 1;
+  position: absolute;
+  bottom: -50vh;
+  right: -20vw;
+  pointer-events: none;
+}
+
+.topStat {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.topStat .name {
+  margin-top: 20%;
+  margin-left: -10px;
+  padding-right: 25px;
+}
+
+.topStat .name li {
+  margin: 1px;
+  display: inline-block;
+}
+
+.topStat .name li:nth-child() .topStat ul li {
+  margin-left: -12.5%;
+}
+
+.topStat .name li:nth-child(1) {
+  font-weight: bold;
+}
+
+.topStat .name li:nth-child(2) {
+  font-weight: 700;
+  color: hsl(0, 0%, 59%);
+}
+
+.topStat .place {
+  margin-top: -2.5%;
+  margin-left: -10%;
+  margin-bottom: -5%;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.bottomStat {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.bottomStat .followers ul li:nth-child(1) {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.bottomStat .followers ul li:nth-child(2) {
+  font-size: 11.5px;
+  letter-spacing: 1px;
+}
+
+.bottomStat .likes ul li:nth-child(1) {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.bottomStat .likes ul li:nth-child(2) {
+  font-size: 11.5px;
+  letter-spacing: 1px;
+}
+
+.bottomStat .photos ul li:nth-child(1) {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.bottomStat .photos ul li:nth-child(2) {
+  font-size: 11.5px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .top-bcg-img {
+    top: -60vh;
+    left: -30vw;
+  }
+
+  .profileCard {
+    margin-top: 10vh;
+  }
+
+  .bottom-bcg-img {
+    bottom: -50vw;
+    right: -35vw;
+  }
+
+  .attribution {
+    margin-top: 10vh;
+    margin-left: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .top-bcg-img {
+    top: -65vh;
+    left: -40vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -65vw;
+    right: -60vw;
+  }
+
+  .profileCard {
+    margin-left: 50vw;
+    margin-bottom: -25vh;
+  }
+
+  .profileCard li {
+    font-size: 1.25rem;
+  }
+
+  .attribution {
+    margin-left: 45vw;
+    font-size: 1.25rem;
+    margin-bottom: -30vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .top-bcg-img {
+    top: -50vh;
+    left: -45vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -100vw;
+    right: -75vw;
+  }
+
+  .profileCard {
+    margin-left: 50vw;
+    margin-bottom: -25vh;
+  }
+
+  .profileCard li {
+    font-size: 1.5rem;
+  }
+
+  .attribution {
+    margin-top: 10vh;
+    margin-left: 40vw;
+    font-size: 1.5rem;
+    margin-bottom: -42.5vh;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .top-bcg-img {
+    top: -60vh;
+    left: -50vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -150vw;
+    right: -110vw;
+  }
+
+  .profileCard {
+    margin-top: 10vh;
+    margin-left: 60vw;
+  }
+
+  .profileCard li {
+    font-size: 1.5rem;
+  }
+
+  .attribution {
+    margin-left: 72.5vw;
+    font-size: 1.5rem;
+    margin-bottom: -70vh;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .top-bcg-img {
+    top: -25vh;
+    left: -65vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -250vw;
+    right: -185vw;
+  }
+
+  .profileCard {
+    margin-left: 80vw;
+    margin-bottom: -60vh;
+  }
+
+  .profileCard li {
+    font-size: 1.7rem;
+  }
+
+  .attribution {
+    margin-left: 95vw;
+    font-size: 1.7rem;
+    margin-bottom: -100vh;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .top-bcg-img {
+    top: -60vh;
+    left: -105vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -300vw;
+    right: -250vw;
+  }
+
+  .profileCard {
+    margin-left: 80vw;
+    margin-bottom: -60vh;
+  }
+
+  .profileCard li {
+    font-size: 1.7rem;
+  }
+
+  .attribution {
+    margin-left: 95vw;
+    font-size: 1.7rem;
+    margin-bottom: -100vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .top-bcg-img {
+    top: -75vh;
+    left: -150vw;
+  }
+
+  .bottom-bcg-img {
+    bottom: -325vw;
+    right: -275vw;
+  }
+
+  .profileCard {
+    margin-left: 60vw;
+    margin-bottom: -60vh;
+  }
+
+  .profileCard li {
+    font-size: 1.7rem;
+  }
+
+  .attribution {
+    margin-left: 90vw;
+    font-size: 1.7rem;
+    margin-bottom: -100vh;
+  }
+}
